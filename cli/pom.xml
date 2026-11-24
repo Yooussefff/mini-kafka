@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.minikafka</groupId>
+		<artifactId>mini-kafka</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>cli</artifactId>
+	<name>cli</name>
+	<description>Command-line tools: console producer, console consumer, topics admin</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.minikafka</groupId>
+			<artifactId>client</artifactId>
+		</dependency>
+	</dependencies>
+</project>

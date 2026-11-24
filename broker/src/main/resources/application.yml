@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: mini-kafka-broker
+
+server:
+  port: 8080            # REST admin / debug API (Sprint 1)
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+# Your own broker settings - bind them later with @ConfigurationProperties
+minikafka:
+  broker:
+    id: 1
+    data-dir: ./data/broker-1   # where partition logs are stored (Sprint 2)
